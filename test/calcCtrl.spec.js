@@ -19,8 +19,8 @@ describe('the calculation controller', function () {
   describe('initialization', function () {
     it('should set result to empty string', function () {
       var ctrl = createController();
-      //expect(ctrl.result).toBe('');
-	  expect(true).toBe(false);
+      expect(ctrl.result).toBe('');
+	  //expect(true).toBe(false);
     });
 
     it('should set oper to plus', function () {
