@@ -11,7 +11,7 @@ test:
     - grunt lint
 
 deployment:
-  prod:
+  staging:
     branch: master
     heroku:
       appname: integration
