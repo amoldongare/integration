@@ -19,7 +19,8 @@ describe('the calculation controller', function () {
   describe('initialization', function () {
     it('should set result to empty string', function () {
       var ctrl = createController();
-      expect(ctrl.result).toBe('');
+      //expect(ctrl.result).toBe('');
+	  expect(true).toBe(false);
     });
 
     it('should set oper to plus', function () {
@@ -80,52 +81,6 @@ describe('the calculation controller', function () {
         expect(ctrl.result).toBe(-4);
       });
     });
-
-    /*describe('minus operator', function () {
-      var operator = 'minus';
-
-      it('should calculate 2 - 2 = 0', function () {
-        var ctrl = createController();
-        ctrl.calculate(2, 2, operator);
-
-        expect(ctrl.result).toBe(0);
-      });
-
-      it('should calculate 10 - 4 = 6', function () {
-        var ctrl = createController();
-        ctrl.calculate(10, 4, operator);
-
-        expect(ctrl.result).toBe(6);
-      });
-
-      it('should calculate 15 - -5 = 20', function () {
-        var ctrl = createController();
-        ctrl.calculate(15, -5, operator);
-
-        expect(ctrl.result).toBe(20);
-      });
-
-      it('should calculate -100 - -20 = -80', function () {
-        var ctrl = createController();
-        ctrl.calculate(-100, -20, operator);
-
-        expect(ctrl.result).toBe(-80);
-      });
-
-      it('should calculate 1 - 7 = -6', function () {
-        var ctrl = createController();
-        ctrl.calculate(1, 7, operator);
-
-        expect(ctrl.result).toBe(-6);
-      });
-
-      it('should calculate 10 - 0 = 10', function () {
-        var ctrl = createController();
-        ctrl.calculate(10, 0, operator);
-
-        expect(ctrl.result).toBe(10);
-      });
-    });*/
 
     describe('divide operator', function () {
       var operator = 'divide';
